@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Georgia;
+    background-color: rgb(55, 52, 52);
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: width 0.8s ease;
+
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: hsl(35, 55%, 94%);
+    border-bottom: 2px solid white;
+
+}
+
+header h1 {
+    font-style: italic;
+    font-size: 30px;
+    color: rgb(55, 52, 52);
+}
+
+.biography {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 30px;
+    gap: 30px;
+    background-color: hsl(35, 31%, 88%);
+    border-bottom: 2px solid white;
+}
+
+.image-container img {
+    max-width: 20rem;
+    border: 8px solid white;
+
+}
+
+.description {
+    font-size: 20px;
+    color: black;
+}
+
+.qualities-section {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-position: inside;
+    padding: 30px;
+    background-color: hsl(36, 11%, 74%);
+    border-bottom: 2px solid white;
+    gap: 20px;
+
+}
+
+h2 {
+    color: rgb(35, 36, 35);
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 7px;
+
+}
+
+.qualities-list li {
+    list-style-type: square;
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: hsl(37, 9%, 64%);
+    padding: 30px;
+    font-size: 18px;
+}
+
+.footer-list li {
+    list-style-type: none;
+    text-align: center;
+    line-height: 1.8;
+
+}
+
+.footer-list li.adress-name {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.footer-list li.galaxy-color {
+    color: rgb(33, 9, 126);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@media (max-width: 1024px) {
+
+    .biography,
+    .qualities-section {
+        grid-template-columns: 1fr;
+    }
+
+    .biography {
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+    }
+
+    .qualities-section {
+
+        text-align: center;
+
+    }
+
+    .qualities-list li {
+
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+        list-style-position: inside;
+
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    .footer-list {
+
+        max-width: 100%;
+        font-size: 15px;
+    }
+}
